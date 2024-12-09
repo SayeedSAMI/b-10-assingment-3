@@ -84,7 +84,7 @@
                 class="fa-solid fa-arrow-right-long bg-black text-white rounded-full p-1 -rotate-45"></i
             ></a>
           </div>
-          <div class="dropdown">
+          <div class="dropdown dropdown-end">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow">
+              class="menu menu-sm dropdown-content text-start bg-base-100 rounded-box z-[1] mt-3 p-2 shadow">
               <li><a>Home</a></li>
               <li><a>Services</a></li>
               <li><a>Portfolio</a></li>
@@ -287,7 +287,7 @@
       </div>
 
       <!-- Explore our Latest works section -->
-      <section class="text-center lg:mt-24">
+      <section class="text-center lg:mt-24 lg:mb-24 hidden">
         <!-- starting button -->
         <button
           class="btn btn-primary rounded-3xl h-3 text-black font-extrabold bg-[#A4DAC3] border-none mb-4">
@@ -302,26 +302,28 @@
           sophistication, featuring weathered wood, sleek metal accents.
         </p>
         <!-- grid layout section  -->
-        <div class="grid grid-cols-4 max-w-[1190px] mx-auto">
+        <div
+          class="grid grid-cols-[2.5fr_0fr_1.5fr] gap-6 lg:w-[1190px] lg:h-[202px] mx-auto">
           <!-- grid layout 1 -->
-          <div class="col-span-3 max-w-[724px] rounded-xl align-middle">
+          <div
+            class="max-w-[724px] lg:w-[724px] lg:h-[179px] rounded-xl align-middle">
             <div
               class="card bg-base-100 shadow-xl flex flex-row align-middle px-6 pt-6 pb-6">
               <figure>
                 <img
                   src="./assets/img1.png"
                   alt="Shoes"
-                  class="rounded-xl lg:w-64 mr-6" />
+                  class="rounded-xl lg:w-64 lg:h-[153px] mr-6" />
               </figure>
-              <div class="card-body items-start text-start p-0">
+              <div class="items-start text-start p-0">
                 <h2 class="card-title">Commercial</h2>
                 <p>
-                  The barn house captivates with its blend of rustic charm and
-                  modern.
+                  Renting a commercial space involves selecting a <br />
+                  location that suits your business needs
                 </p>
                 <div class="card-actions">
                   <button
-                    class="btn btn-primary rounded-3xl text-black font-extrabold bg-[#fff] border-none mb-4">
+                    class="btn btn-primary rounded-3xl text-black font-extrabold bg-[#fff] border-none">
                     Explore our Latest works
                     <i
                       class="fa-solid fa-arrow-right-long bg-[#A4DAC3] rounded-full p-1">
@@ -332,15 +334,170 @@
             </div>
           </div>
           <!-- grid layout 2 -->
-          <div class="col-span-1"></div>
+          <div class="rounded-xl align-middle lg:h-[179px] lg:w-[326px]">
+            <div
+              class="card bg-base-100 shadow-xl flex flex-row align-middle px-6 pt-6 pb-6">
+              <img src="./assets/img2.png" class="lg:h-[153px]" alt="" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-[.5fr_2fr_1fr] gap-6 lg:w-[1190px] lg:h-[202px] mt-6 mx-auto">
           <!-- grid layout 3 -->
-          <div class="col-span-1"></div>
+          <div class="rounded-xl align-middle lg:w-[226px] lg:h-[201px]">
+            <div
+              class="card bg-base-100 shadow-xl flex flex-row align-middle px-6 pt-6 pb-6">
+              <img src="./assets/img3.png" class="lg:h-[153px]" alt="" />
+            </div>
+          </div>
           <!-- grid layout 4 -->
-          <div class="col-span-2"></div>
+          <div class="">
+            <div
+              class="card bg-base-100 shadow-xl flex flex-row align-middle px-6 pt-6 pb-6 lg:h-[201px]">
+              <figure>
+                <img
+                  src="./assets/img4.png"
+                  alt="Shoes"
+                  class="rounded-xl lg:w-64 mr-6 lg:h-[153px]" />
+              </figure>
+              <div class="items-start text-start p-0">
+                <h2 class="card-title">Commercial</h2>
+                <p>
+                  Renting a commercial space involves selecting a location that
+                  suits your business needs
+                </p>
+                <div class="card-actions">
+                  <button
+                    class="btn btn-primary rounded-3xl text-black font-extrabold bg-[#fff] border-none">
+                    Explore our Latest works
+                    <i
+                      class="fa-solid fa-arrow-right-long bg-[#A4DAC3] rounded-full p-1">
+                    </i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- grid layout 5 -->
-          <div class="col-span-1"></div>
+          <div class="">
+            <div
+              class="card bg-base-100 shadow-xl flex flex-row align-middle lg:w-[226px] lg:h-[201px] px-6 pt-6 pb-6">
+              <img src="./assets/img5.png" alt="" />
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- Our articles & news -->
+      <section class="text-center bg-[#F4F4F4]">
+        <button class="btn btn-xs bg-[#A4DAC3] mb-6">
+          <i class="fa-solid fa-arrow-right"></i>Rinterio News
+        </button>
+        <!-- text section -->
+        <h1 class="text-4xl font-bold mb-6">Read Our Articles and News</h1>
+        <p class="font-normal text-xs mb-8">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, <br />
+          featuring weathered wood, sleek metal accents.
+        </p>
+        <!-- card section  -->
+        <div class="grid grid-cols-3 gap-6 lg:w-[1170px] mx-auto">
+          <!-- card 1 -->
+          <div class="mx-auto">
+            <div class="card bg-base-100 w-96 shadow-xl bg-[#fff]">
+              <figure class="px-6 pt-6 mb-3">
+                <img
+                  src="./assets/article1.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="flex justify-center gap-3 font-medium text-[14px]">
+                <p><i class="fa-solid fa-calendar-days"> </i> July14, 2024</p>
+                <p><i class="fa-regular fa-circle-user"> </i> By Admin</p>
+              </div>
+              <div class="card-body items-start text-start">
+                <h2 class="card-title">
+                  How to choose the furniture right of your home.
+                </h2>
+                <p>
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+                <div class="card-actions">
+                  <button
+                    class="btn btn-primary shadow-none bg-white border-none text-black font-bold">
+                    Read More<i
+                      class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="mx-auto">
+            <div class="card bg-base-100 w-96 shadow-xl bg-[#fff]">
+              <figure class="px-6 pt-6 mb-3">
+                <img
+                  src="./assets/article2.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="flex justify-center gap-3 font-medium text-[14px]">
+                <p><i class="fa-solid fa-calendar-days"> </i> July14, 2024</p>
+                <p><i class="fa-regular fa-circle-user"> </i> By Admin</p>
+              </div>
+              <div class="card-body items-start text-start">
+                <h2 class="card-title">
+                  How to choose the furniture right of your home.
+                </h2>
+                <p>
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+                <div class="card-actions">
+                  <button
+                    class="btn btn-primary shadow-none bg-white border-none text-black font-bold">
+                    Read More<i
+                      class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="mx-auto">
+            <div class="card bg-base-100 w-96 shadow-xl bg-[#fff]">
+              <figure class="px-6 pt-6 mb-3">
+                <img
+                  src="./assets/article3.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="flex justify-center gap-3 font-medium text-[14px]">
+                <p><i class="fa-solid fa-calendar-days"> </i> July14, 2024</p>
+                <p><i class="fa-regular fa-circle-user"> </i> By Admin</p>
+              </div>
+              <div class="card-body items-start text-start">
+                <h2 class="card-title">
+                  How to choose the furniture right of your home.
+                </h2>
+                <p>
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+                <div class="card-actions">
+                  <button
+                    class="btn btn-primary shadow-none bg-white border-none text-black font-bold">
+                    Read More<i
+                      class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </main>
   </body>
 </html>
