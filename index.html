@@ -287,7 +287,7 @@
       </div>
 
       <!-- Explore our Latest works section -->
-      <section class="text-center lg:mt-24 lg:mb-24 hidden">
+      <section class="text-center mb-6 lg:mt-24 lg:mb-24">
         <!-- starting button -->
         <button
           class="btn btn-primary rounded-3xl h-3 text-black font-extrabold bg-[#A4DAC3] border-none mb-4">
@@ -303,12 +303,12 @@
         </p>
         <!-- grid layout section  -->
         <div
-          class="grid grid-cols-[2.5fr_0fr_1.5fr] gap-6 lg:w-[1190px] lg:h-[202px] mx-auto">
+          class="grid lg:grid-cols-[2.5fr_0fr_1.5fr] gap-6 lg:w-[1190px] lg:h-[202px] mx-auto">
           <!-- grid layout 1 -->
           <div
-            class="max-w-[724px] lg:w-[724px] lg:h-[179px] rounded-xl align-middle">
+            class="max-w-[724px] lg:w-[724px] lg:h-[179px] rounded-xl align-middle p-3 lg:p-0 mx-auto">
             <div
-              class="card bg-base-100 shadow-xl flex flex-row align-middle px-6 pt-6 pb-6">
+              class="card bg-base-100 shadow-xl flex flex-col lg:flex-row align-middle px-6 pt-6 pb-6">
               <figure>
                 <img
                   src="./assets/img1.png"
@@ -323,7 +323,7 @@
                 </p>
                 <div class="card-actions">
                   <button
-                    class="btn btn-primary rounded-3xl text-black font-extrabold bg-[#fff] border-none">
+                    class="btn lg:btn-primary rounded-3xl text-black font-extrabold bg-[#fff] border-none">
                     Explore our Latest works
                     <i
                       class="fa-solid fa-arrow-right-long bg-[#A4DAC3] rounded-full p-1">
@@ -342,9 +342,10 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-[.5fr_2fr_1fr] gap-6 lg:w-[1190px] lg:h-[202px] mt-6 mx-auto">
+          class="grid lg:grid-cols-[.5fr_2fr_1fr] gap-6 lg:w-[1190px] lg:h-[202px] mt-6 mx-auto">
           <!-- grid layout 3 -->
-          <div class="rounded-xl align-middle lg:w-[226px] lg:h-[201px]">
+          <div
+            class="rounded-xl align-middle lg:w-[226px] lg:h-[201px] mx-auto">
             <div
               class="card bg-base-100 shadow-xl flex flex-row align-middle px-6 pt-6 pb-6">
               <img src="./assets/img3.png" class="lg:h-[153px]" alt="" />
@@ -353,7 +354,7 @@
           <!-- grid layout 4 -->
           <div class="">
             <div
-              class="card bg-base-100 shadow-xl flex flex-row align-middle px-6 pt-6 pb-6 lg:h-[201px]">
+              class="card bg-base-100 shadow-xl flex flex-col lg:flex-row align-middle p-3 mx-auto lg:p-0 px-6 pt-6 pb-6 lg:h-[201px]">
               <figure>
                 <img
                   src="./assets/img4.png"
@@ -368,7 +369,7 @@
                 </p>
                 <div class="card-actions">
                   <button
-                    class="btn btn-primary rounded-3xl text-black font-extrabold bg-[#fff] border-none">
+                    class="btn lg:btn-primary rounded-3xl text-black font-extrabold bg-[#fff] border-none">
                     Explore our Latest works
                     <i
                       class="fa-solid fa-arrow-right-long bg-[#A4DAC3] rounded-full p-1">
@@ -381,7 +382,7 @@
           <!-- grid layout 5 -->
           <div class="">
             <div
-              class="card bg-base-100 shadow-xl flex flex-row align-middle lg:w-[226px] lg:h-[201px] px-6 pt-6 pb-6">
+              class="card bg-base-100 shadow-xl flex flex-row align-middle mx-auto p-3 lg:p-0 lg:w-[226px] lg:h-[201px] px-6 pt-6 pb-6">
               <img src="./assets/img5.png" alt="" />
             </div>
           </div>
@@ -558,6 +559,32 @@
       </section>
     </main>
     <!-- footer section -->
-    <footer></footer>
+    <footer class="bg-[#1C1C1C] text-white text-center pt-24 px-2">
+      <h1 class="text-[#E9E9E9] mb-4 text-3xl font-extrabold">
+        <i
+          class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] text-black rounded-full p-1">
+        </i>
+        Rinterio
+      </h1>
+      <p class="text-[#737373] font-medium text-xl">
+        The barn house captivates with its blend of rustic charm and modern
+        sophistication, <br />featuring weathered wood, sleek metal accents.
+      </p>
+      <div class="footer footer-center text-white rounded p-10">
+        <nav
+          class="grid grid-row-5 lg:grid-flow-col gap-9 lg:gap-32 text-[#E9E9E9] font-medium text-xl">
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">Services</a>
+          <a class="link link-hover">Portfolio</a>
+          <a class="link link-hover">Blogs</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav>
+      </div>
+      <button
+        class="btn bg-[#ABEF5F] w-64 lg:w-[282px] rounded-3xl border-none text-xl font-extrabold mb-24">
+        Book Consult<i
+          class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-1"></i>
+      </button>
+    </footer>
   </body>
 </html>
